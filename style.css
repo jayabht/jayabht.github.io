@@ -242,15 +242,90 @@ a { color: inherit; }
   border-left: 2px solid var(--signal);
   padding-left: 1.35rem; margin: 2rem 0 2.75rem !important;
 }
-.about__cols {
-  display: grid; gap: 2.5rem; padding-top: 2.25rem; border-top: 1px solid var(--line);
+.about__li {
+  display: inline-flex; align-items: center; gap: .4rem; margin-top: 1rem;
+  text-decoration: none; font-size: .7rem; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .18em; color: var(--bone-dim);
+  border-bottom: 1px solid var(--line); padding-bottom: .3rem;
+  transition: color .25s, border-color .25s;
 }
-@media (min-width: 620px) { .about__cols { grid-template-columns: 1fr 1fr; } }
-.caps, .edu { list-style: none; margin: 0; padding: 0; }
-.caps li {
-  padding: .5rem 0; border-bottom: 1px solid var(--line-2);
-  font-size: .9rem; color: var(--bone);
+.about__li:hover { color: var(--signal); border-color: var(--signal); }
+
+/* sub-heading inside a section */
+.sub-label {
+  display: flex; align-items: center; gap: .7rem;
+  margin: clamp(3rem, 7vw, 5rem) 0 clamp(1.5rem, 3vw, 2.25rem);
+  padding-top: 1.25rem; border-top: 1px solid var(--line);
+  font-size: .68rem; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .24em; color: var(--bone-faint);
 }
+.sub-label span { color: var(--signal); }
+
+/* experience timeline */
+.xplist { list-style: none; margin: 0; padding: 0; }
+.xp {
+  display: grid; gap: .6rem clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.6rem, 3.5vw, 2.4rem) 0;
+  border-top: 1px solid var(--line-2);
+}
+.xp:first-child { border-top: 0; padding-top: 0; }
+@media (min-width: 860px) {
+  .xp { grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); }
+}
+.xp__when {
+  display: flex; flex-wrap: wrap; align-items: baseline; align-content: flex-start;
+  align-self: start; gap: .6rem;
+}
+.xp__dates {
+  font-size: .76rem; letter-spacing: .1em; color: var(--bone-dim);
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.xp__now {
+  font-size: .58rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--signal); border: 1px solid rgba(255, 74, 28, .4); padding: .18rem .45rem;
+}
+.xp__role {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(1.25rem, 2.6vw, 1.85rem); line-height: 1.15;
+  letter-spacing: -.012em; margin: 0 0 .3rem;
+}
+.xp__org { margin: 0 0 .9rem; font-size: .88rem; color: var(--bone-dim); }
+.xp__org span { color: var(--signal); }
+.xp__points { list-style: none; margin: 0; padding: 0; }
+.xp__points li {
+  position: relative; padding-left: 1.1rem; margin-bottom: .5rem;
+  font-size: .93rem; color: var(--bone-dim); max-width: 64ch;
+}
+.xp__points li::before {
+  content: ""; position: absolute; left: 0; top: .68em;
+  width: 5px; height: 1px; background: var(--signal); opacity: .8;
+}
+.xp__metrics {
+  list-style: none; display: flex; flex-wrap: wrap; gap: .4rem;
+  margin: 1rem 0 0; padding: 0;
+}
+.xp__metrics li {
+  font-size: .7rem; letter-spacing: .04em; font-variant-numeric: tabular-nums;
+  padding: .32rem .7rem; color: var(--bone);
+  border: 1px solid rgba(255, 74, 28, .35); background: rgba(255, 74, 28, .06);
+}
+
+/* competencies + education */
+.about__foot {
+  display: grid; gap: clamp(2rem, 4vw, 3rem);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding-top: clamp(1.75rem, 4vw, 2.5rem);
+  border-top: 1px solid var(--line);
+}
+@media (min-width: 900px) { .about__foot { grid-template-columns: minmax(0, 1fr) minmax(0, 16rem); } }
+.complist { display: grid; gap: 1.75rem; }
+@media (min-width: 640px) { .complist { grid-template-columns: 1fr 1fr; } }
+.comp ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .35rem; }
+.comp li {
+  font-size: .76rem; letter-spacing: .02em; color: var(--bone-dim);
+  border: 1px solid var(--line); padding: .3rem .6rem;
+}
+.edu { list-style: none; margin: 0; padding: 0; }
 .edu li { display: flex; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--line-2); }
 .edu__year { color: var(--signal); font-size: .82rem; padding-top: .15rem; flex: none; }
 .edu__what { display: flex; flex-direction: column; }
