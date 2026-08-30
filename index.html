@@ -22,6 +22,14 @@
 <body>
 <a class="skip" href="#work">Skip to work</a>
 
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="cursor" aria-hidden="true">
+  <div class="cursor__ring"><span class="cursor__label"></span></div>
+  <div class="cursor__dot"></div>
+</div>
+<div class="peek" aria-hidden="true"><img src="" alt=""></div>
+
 <header class="bar">
   <div class="bar__in">
     <a class="bar__name" href="#top">Jaya&nbsp;Bhattacharya</a>
@@ -36,10 +44,15 @@
 
 <main id="top">
 
-  <section class="hero">
+  <section class="hero" id="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
     <div class="shell">
       <p class="hero__eyebrow"><span class="pulse" aria-hidden="true"></span>Creative Strategist &mdash; Content Strategy &mdash; AI Content Specialist</p>
-      <h1 class="hero__h1">I write<br>to make things<br><em>work.</em></h1>
+      <h1 class="hero__h1">
+        <span class="ln"><span>I write</span></span>
+        <span class="ln"><span>to make things</span></span>
+        <span class="ln"><span><em>work.</em></span></span>
+      </h1>
       <div class="hero__foot">
         <p class="hero__sub">Five years across AI, ecommerce and consumer brands &mdash; turning ambiguous briefs into content that answers to a number.</p>
         <a class="hero__cue" href="#stats"><span>Scroll</span><span aria-hidden="true">&darr;</span></a>
@@ -70,32 +83,32 @@
       <p class="rule-label"><span>01</span> Receipts</p>
       <div class="stats__grid">
           <div class="stat reveal">
-            <p class="stat__fig">+150%</p>
+            <p class="stat__fig" data-count="+150%">+150%</p>
             <p class="stat__label">CRM click-through</p>
             <p class="stat__note">0.40% → 1.00% · Bewakoof</p>
           </div>
           <div class="stat reveal">
-            <p class="stat__fig">40→95%</p>
+            <p class="stat__fig" data-count="40→95%">40→95%</p>
             <p class="stat__label">Email open rate</p>
             <p class="stat__note">Promotional campaigns · Bewakoof</p>
           </div>
           <div class="stat reveal">
-            <p class="stat__fig">2→10%</p>
+            <p class="stat__fig" data-count="2→10%">2→10%</p>
             <p class="stat__label">Email click-through</p>
             <p class="stat__note">Launches and retention · Bewakoof</p>
           </div>
           <div class="stat reveal">
-            <p class="stat__fig">−70%</p>
+            <p class="stat__fig" data-count="−70%">−70%</p>
             <p class="stat__label">Production effort</p>
             <p class="stat__note">GPT-powered CRM workflows · Bewakoof</p>
           </div>
           <div class="stat reveal">
-            <p class="stat__fig">+60%</p>
+            <p class="stat__fig" data-count="+60%">+60%</p>
             <p class="stat__label">Workflow accuracy</p>
             <p class="stat__note">AI evaluation frameworks · Amazon</p>
           </div>
           <div class="stat reveal">
-            <p class="stat__fig">5</p>
+            <p class="stat__fig" data-count="5">5</p>
             <p class="stat__label">Writers led</p>
             <p class="stat__note">Content team · Bewakoof</p>
           </div>
@@ -230,69 +243,69 @@
       <p class="rule-label"><span>03</span> Index</p>
       <h2 class="h-display reveal">Ten brands. Nine categories.<br>One question: <em>does it perform?</em></h2>
       <nav class="idxlist">
-        <a class="idx" href="#bewakoof">
+        <a class="idx" href="#bewakoof" data-thumb="assets/img/58d0db9386009faa02a0d352a8b1f387.jpg" data-cursor="Open">
           <span class="idx__num">01</span>
-          <span class="idx__client">Bewakoof</span>
+          <span class="idx__client" data-text="Bewakoof">Bewakoof</span>
           <span class="idx__scope">In-store Branding &amp; Lifestyle CRM</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#deltic">
+        <a class="idx" href="#deltic" data-thumb="assets/img/1c6747ed98481f865385ff1f7e919c5d.jpg" data-cursor="Open">
           <span class="idx__num">02</span>
-          <span class="idx__client">Deltic</span>
+          <span class="idx__client" data-text="Deltic">Deltic</span>
           <span class="idx__scope">Brand Positioning — EV</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#emirates-draws">
+        <a class="idx" href="#emirates-draws" data-thumb="assets/video/52de0cf0ba5cbcf75faf46efb002420a.jpg" data-cursor="Open">
           <span class="idx__num">03</span>
-          <span class="idx__client">Emirates Draws</span>
+          <span class="idx__client" data-text="Emirates Draws">Emirates Draws</span>
           <span class="idx__scope">Social Media &amp; BAU Promotions</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#choithrams">
+        <a class="idx" href="#choithrams" data-thumb="assets/video/fc555657031e6a9fbfb700cca513748b.jpg" data-cursor="Open">
           <span class="idx__num">04</span>
-          <span class="idx__client">Choithrams</span>
+          <span class="idx__client" data-text="Choithrams">Choithrams</span>
           <span class="idx__scope">Major Launch</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#burjeel">
+        <a class="idx" href="#burjeel" data-thumb="assets/img/35c8fb76182d070fcde92300bb2ba6ab.png" data-cursor="Open">
           <span class="idx__num">05</span>
-          <span class="idx__client">Burjeel</span>
+          <span class="idx__client" data-text="Burjeel">Burjeel</span>
           <span class="idx__scope">Social Media &amp; BAU Promotions</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#kuku-fm">
+        <a class="idx" href="#kuku-fm" data-thumb="assets/video/1901f487ec25c66565706fb6433761d6.jpg" data-cursor="Open">
           <span class="idx__num">06</span>
-          <span class="idx__client">Kuku FM</span>
+          <span class="idx__client" data-text="Kuku FM">Kuku FM</span>
           <span class="idx__scope">Promos — Audiobooks</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#bounz">
+        <a class="idx" href="#bounz" data-thumb="assets/img/914a22e71a37e1312a694e60221c3d29.jpg" data-cursor="Open">
           <span class="idx__num">07</span>
-          <span class="idx__client">BOUNZ</span>
+          <span class="idx__client" data-text="BOUNZ">BOUNZ</span>
           <span class="idx__scope">Social Media &amp; Campaigns</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#hersay">
+        <a class="idx" href="#hersay" data-thumb="assets/video/de3dc3401a1fb54fc7201dd71b1c4376.jpg" data-cursor="Open">
           <span class="idx__num">08</span>
-          <span class="idx__client">Hersay</span>
+          <span class="idx__client" data-text="Hersay">Hersay</span>
           <span class="idx__scope">Social Media Marketing — Beauty</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#being-human">
+        <a class="idx" href="#being-human" data-thumb="assets/img/f75ed86c090199f6303b073a1a91b206.jpg" data-cursor="Open">
           <span class="idx__num">09</span>
-          <span class="idx__client">Being Human</span>
+          <span class="idx__client" data-text="Being Human">Being Human</span>
           <span class="idx__scope">Social Media Marketing — Lifestyle</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#digital-showroom">
+        <a class="idx" href="#digital-showroom" data-thumb="assets/img/f2da95fe2723f671ac5824898696b46a.png" data-cursor="Open">
           <span class="idx__num">10</span>
-          <span class="idx__client">Digital Showroom</span>
+          <span class="idx__client" data-text="Digital Showroom">Digital Showroom</span>
           <span class="idx__scope">Social Media Marketing — B2B</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#personal">
+        <a class="idx" href="#personal" data-thumb="assets/img/098032004c09a7e293b6868cc828d12f.png" data-cursor="Open">
           <span class="idx__num">11</span>
-          <span class="idx__client">Personal Projects</span>
+          <span class="idx__client" data-text="Personal Projects">Personal Projects</span>
           <span class="idx__scope">Self-initiated</span>
           <span class="idx__go" aria-hidden="true">&rarr;</span>
         </a>
@@ -317,37 +330,37 @@
         <h4 class="block__label"><span>Push Notifications</span><span class="block__count">06</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/58d0db9386009faa02a0d352a8b1f387.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/58d0db9386009faa02a0d352a8b1f387.jpg" data-cursor="View">
             <img src="assets/img/58d0db9386009faa02a0d352a8b1f387.jpg" alt="Bewakoof — Push Notifications" loading="lazy" decoding="async" style="aspect-ratio:720/297">
           </button>
           <figcaption>A brand new collection that recorded an all-time high CTR of 0.56%, even among inactive users</figcaption>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/e93f6045145274ce2dd7b686d6b3ae6c.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/e93f6045145274ce2dd7b686d6b3ae6c.jpg" data-cursor="View">
             <img src="assets/img/e93f6045145274ce2dd7b686d6b3ae6c.jpg" alt="Bewakoof — Push Notifications" loading="lazy" decoding="async" style="aspect-ratio:720/311">
           </button>
           <figcaption>Used emojis to convey how casual shoes are best for several occasions. It recorded a CTR of 0.58%</figcaption>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/ea45c13f7957bdb225a169721e536285.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/ea45c13f7957bdb225a169721e536285.jpg" data-cursor="View">
             <img src="assets/img/ea45c13f7957bdb225a169721e536285.jpg" alt="Bewakoof — Push Notifications" loading="lazy" decoding="async" style="aspect-ratio:720/310">
           </button>
           <figcaption>Gave the regular sale PNs a creative twist that made the offer super attractive for the users.</figcaption>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/c30b31b14a3ca5cabb938956149c0659.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/c30b31b14a3ca5cabb938956149c0659.jpg" data-cursor="View">
             <img src="assets/img/c30b31b14a3ca5cabb938956149c0659.jpg" alt="Bewakoof — Push Notifications" loading="lazy" decoding="async" style="aspect-ratio:720/307">
           </button>
           <figcaption>This creative PN took the CTR from 0.45-0.50% to a whopping 0.58% and sales of ₹1,52,458</figcaption>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/81d19fe4a34dcac3f78adfca06a4153f.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/81d19fe4a34dcac3f78adfca06a4153f.jpg" data-cursor="View">
             <img src="assets/img/81d19fe4a34dcac3f78adfca06a4153f.jpg" alt="Bewakoof — Push Notifications" loading="lazy" decoding="async" style="aspect-ratio:720/275">
           </button>
           <figcaption>A little self-jab never hurts anybody but witness a CTR of 0.67%</figcaption>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/291739852d945892a0418af734d50bf0.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/291739852d945892a0418af734d50bf0.jpg" data-cursor="View">
             <img src="assets/img/291739852d945892a0418af734d50bf0.jpg" alt="Bewakoof — Push Notifications" loading="lazy" decoding="async" style="aspect-ratio:720/246">
           </button>
           <figcaption>Took advantage of the ruckus around Twitter and this moment marketing piece witnessed an overwhelming response</figcaption>
@@ -358,7 +371,7 @@
         <h4 class="block__label"><span>WhatsApp Business</span><span class="block__count">01</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/f32532ac72bde9e3da8265035a0c9eba.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/f32532ac72bde9e3da8265035a0c9eba.jpg" data-cursor="View">
             <img src="assets/img/f32532ac72bde9e3da8265035a0c9eba.jpg" alt="Bewakoof — WhatsApp Business" loading="lazy" decoding="async" style="aspect-ratio:720/954">
           </button>
           <figcaption>This creative piece with Cinderella ft. Casual Shoes  garnered an all-time high of 6.8% CTR!</figcaption>
@@ -369,82 +382,82 @@
         <h4 class="block__label"><span>Mailers</span><span class="block__count">16</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/09213d273dcb21d2d27fc2102676641a.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/09213d273dcb21d2d27fc2102676641a.jpg" data-cursor="View">
             <img src="assets/img/09213d273dcb21d2d27fc2102676641a.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/1144">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/ea99169e7bb624a1095bdc211e4cc7e3.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/ea99169e7bb624a1095bdc211e4cc7e3.jpg" data-cursor="View">
             <img src="assets/img/ea99169e7bb624a1095bdc211e4cc7e3.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/857">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/b23959ead4e6cd7cd4f4c0cb0110109a.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/b23959ead4e6cd7cd4f4c0cb0110109a.jpg" data-cursor="View">
             <img src="assets/img/b23959ead4e6cd7cd4f4c0cb0110109a.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/1038">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/57cf1d3ddbb9f4b70df7786bb6da79fc.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/57cf1d3ddbb9f4b70df7786bb6da79fc.jpg" data-cursor="View">
             <img src="assets/img/57cf1d3ddbb9f4b70df7786bb6da79fc.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/1067">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/27831b2d4b9be8d2b1e0d9436f602b1c.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/27831b2d4b9be8d2b1e0d9436f602b1c.jpg" data-cursor="View">
             <img src="assets/img/27831b2d4b9be8d2b1e0d9436f602b1c.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/1131">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/2fef42deca1b3851a1ce91e9369497ea.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/2fef42deca1b3851a1ce91e9369497ea.jpg" data-cursor="View">
             <img src="assets/img/2fef42deca1b3851a1ce91e9369497ea.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/1101">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/ca45850cc2a073d3b3c060081c4adb5b.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/ca45850cc2a073d3b3c060081c4adb5b.jpg" data-cursor="View">
             <img src="assets/img/ca45850cc2a073d3b3c060081c4adb5b.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/849">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/d5a40f3f4734459ac56f18e79a658090.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/d5a40f3f4734459ac56f18e79a658090.jpg" data-cursor="View">
             <img src="assets/img/d5a40f3f4734459ac56f18e79a658090.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/1012">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/986bd70720b05b6fe228db5c0239b2f4.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/986bd70720b05b6fe228db5c0239b2f4.jpg" data-cursor="View">
             <img src="assets/img/986bd70720b05b6fe228db5c0239b2f4.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/978">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/0140ecca022482e240c4a130942eb941.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/0140ecca022482e240c4a130942eb941.jpg" data-cursor="View">
             <img src="assets/img/0140ecca022482e240c4a130942eb941.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/921">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/ca36cda1c00a1243e963ad992b19f8a0.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/ca36cda1c00a1243e963ad992b19f8a0.jpg" data-cursor="View">
             <img src="assets/img/ca36cda1c00a1243e963ad992b19f8a0.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/1013">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/9319d9a8dd2ee7e2b15572cd9e42bb2f.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/9319d9a8dd2ee7e2b15572cd9e42bb2f.jpg" data-cursor="View">
             <img src="assets/img/9319d9a8dd2ee7e2b15572cd9e42bb2f.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/1482">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/f5eb0ba72cb6b43c2af1a3f1841c3132.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/f5eb0ba72cb6b43c2af1a3f1841c3132.jpg" data-cursor="View">
             <img src="assets/img/f5eb0ba72cb6b43c2af1a3f1841c3132.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/552">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/cd9a43d46676c0fd9f4571fbbbbd937d.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/cd9a43d46676c0fd9f4571fbbbbd937d.jpg" data-cursor="View">
             <img src="assets/img/cd9a43d46676c0fd9f4571fbbbbd937d.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/495">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/72d3c5209c6cee1a320e2d024210d255.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/72d3c5209c6cee1a320e2d024210d255.jpg" data-cursor="View">
             <img src="assets/img/72d3c5209c6cee1a320e2d024210d255.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/491">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/851691aa35d7c2168334c93779917b3b.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/851691aa35d7c2168334c93779917b3b.jpg" data-cursor="View">
             <img src="assets/img/851691aa35d7c2168334c93779917b3b.jpg" alt="Bewakoof — Mailers" loading="lazy" decoding="async" style="aspect-ratio:720/545">
           </button>
         </figure>
@@ -454,12 +467,12 @@
         <h4 class="block__label"><span>Category — Sneakers</span><span class="block__count">02</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/cd5b27e37f6134f6bef740bbacf8a5c2.png">
+          <button class="tile__btn" type="button" data-full="assets/img/cd5b27e37f6134f6bef740bbacf8a5c2.png" data-cursor="View">
             <img src="assets/img/cd5b27e37f6134f6bef740bbacf8a5c2.png" alt="Bewakoof — Category — Sneakers" loading="lazy" decoding="async" style="aspect-ratio:512/341">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/3b505e35a3e1383772e07d25d894df66.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/3b505e35a3e1383772e07d25d894df66.jpg" data-cursor="View">
             <img src="assets/img/3b505e35a3e1383772e07d25d894df66.jpg" alt="Bewakoof — Category — Sneakers" loading="lazy" decoding="async" style="aspect-ratio:221/512">
           </button>
         </figure>
@@ -469,12 +482,12 @@
         <h4 class="block__label"><span>Billing Counter</span><span class="block__count">02</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/a9ebd0912c63559134e4240d47d79021.png">
+          <button class="tile__btn" type="button" data-full="assets/img/a9ebd0912c63559134e4240d47d79021.png" data-cursor="View">
             <img src="assets/img/a9ebd0912c63559134e4240d47d79021.png" alt="Bewakoof — Billing Counter" loading="lazy" decoding="async" style="aspect-ratio:512/341">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/bede381b20508c0dfc12c5d5ef0586d9.png">
+          <button class="tile__btn" type="button" data-full="assets/img/bede381b20508c0dfc12c5d5ef0586d9.png" data-cursor="View">
             <img src="assets/img/bede381b20508c0dfc12c5d5ef0586d9.png" alt="Bewakoof — Billing Counter" loading="lazy" decoding="async" style="aspect-ratio:512/284">
           </button>
         </figure>
@@ -484,17 +497,17 @@
         <h4 class="block__label"><span>Mirror Stickers, Trial Rooms</span><span class="block__count">03</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/01890e6405b1caa53b5594d5efe5fa62.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/01890e6405b1caa53b5594d5efe5fa62.jpg" data-cursor="View">
             <img src="assets/img/01890e6405b1caa53b5594d5efe5fa62.jpg" alt="Bewakoof — Mirror Stickers, Trial Rooms" loading="lazy" decoding="async" style="aspect-ratio:500/500">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/e73cd4a341a1387f8b5b4c41d0642c3f.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/e73cd4a341a1387f8b5b4c41d0642c3f.jpg" data-cursor="View">
             <img src="assets/img/e73cd4a341a1387f8b5b4c41d0642c3f.jpg" alt="Bewakoof — Mirror Stickers, Trial Rooms" loading="lazy" decoding="async" style="aspect-ratio:500/500">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/5261a2e1582c8eac35c86a997c997a97.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/5261a2e1582c8eac35c86a997c997a97.jpg" data-cursor="View">
             <img src="assets/img/5261a2e1582c8eac35c86a997c997a97.jpg" alt="Bewakoof — Mirror Stickers, Trial Rooms" loading="lazy" decoding="async" style="aspect-ratio:500/500">
           </button>
         </figure>
@@ -530,32 +543,32 @@
         <h4 class="block__label"><span>Campaign Visuals</span><span class="block__count">06</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/1c6747ed98481f865385ff1f7e919c5d.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/1c6747ed98481f865385ff1f7e919c5d.jpg" data-cursor="View">
             <img src="assets/img/1c6747ed98481f865385ff1f7e919c5d.jpg" alt="Deltic — Campaign Visuals" loading="lazy" decoding="async" style="aspect-ratio:1000/1000">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/e85dd5ca4aa4a41e28c2ac0e19cf3539.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/e85dd5ca4aa4a41e28c2ac0e19cf3539.jpg" data-cursor="View">
             <img src="assets/img/e85dd5ca4aa4a41e28c2ac0e19cf3539.jpg" alt="Deltic — Campaign Visuals" loading="lazy" decoding="async" style="aspect-ratio:1000/1000">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/ce5d8cacc4447026c98ae79f0ae3b418.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/ce5d8cacc4447026c98ae79f0ae3b418.jpg" data-cursor="View">
             <img src="assets/img/ce5d8cacc4447026c98ae79f0ae3b418.jpg" alt="Deltic — Campaign Visuals" loading="lazy" decoding="async" style="aspect-ratio:1000/1000">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/2d66e73fb0953cefb30b62b99606ce11.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/2d66e73fb0953cefb30b62b99606ce11.jpg" data-cursor="View">
             <img src="assets/img/2d66e73fb0953cefb30b62b99606ce11.jpg" alt="Deltic — Campaign Visuals" loading="lazy" decoding="async" style="aspect-ratio:1000/1000">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/c584c743ed2010b208277d29a8393565.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/c584c743ed2010b208277d29a8393565.jpg" data-cursor="View">
             <img src="assets/img/c584c743ed2010b208277d29a8393565.jpg" alt="Deltic — Campaign Visuals" loading="lazy" decoding="async" style="aspect-ratio:1600/533">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/1552fcfd60ced85a4e295b19b03f6244.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/1552fcfd60ced85a4e295b19b03f6244.jpg" data-cursor="View">
             <img src="assets/img/1552fcfd60ced85a4e295b19b03f6244.jpg" alt="Deltic — Campaign Visuals" loading="lazy" decoding="async" style="aspect-ratio:1000/1000">
           </button>
         </figure>
@@ -606,17 +619,17 @@
       <div class="block">
         <h4 class="block__label"><span>Social Media Ads</span><span class="block__count">03</span></h4>
         <div class="grid">
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/52de0cf0ba5cbcf75faf46efb002420a.jpg" style="aspect-ratio:720/1280">
             <source src="assets/video/52de0cf0ba5cbcf75faf46efb002420a.mp4" type="video/mp4">
           </video>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/00c5b9040153ccaf971c1fd24c286513.jpg" style="aspect-ratio:1080/1080">
             <source src="assets/video/00c5b9040153ccaf971c1fd24c286513.mp4" type="video/mp4">
           </video>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/ea008b475f80032aaaea233e62212246.jpg" style="aspect-ratio:720/1280">
             <source src="assets/video/ea008b475f80032aaaea233e62212246.mp4" type="video/mp4">
           </video>
@@ -626,17 +639,17 @@
       <div class="block">
         <h4 class="block__label"><span>Promotional Videos</span><span class="block__count">03</span></h4>
         <div class="grid">
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/6b12e357556a6dfeb910f95bc44eaeee.jpg" style="aspect-ratio:720/1280">
             <source src="assets/video/6b12e357556a6dfeb910f95bc44eaeee.mp4" type="video/mp4">
           </video>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/76985e334dc7735d50fbc002f43b748e.jpg" style="aspect-ratio:720/1280">
             <source src="assets/video/76985e334dc7735d50fbc002f43b748e.mp4" type="video/mp4">
           </video>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/a03f97c99a470541baecb58f30c64742.jpg" style="aspect-ratio:720/1280">
             <source src="assets/video/a03f97c99a470541baecb58f30c64742.mp4" type="video/mp4">
           </video>
@@ -647,37 +660,37 @@
         <h4 class="block__label"><span>Social Media Posts</span><span class="block__count">07</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/a31d745b144e44f8c25e3e13dc81ac34.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/a31d745b144e44f8c25e3e13dc81ac34.jpg" data-cursor="View">
             <img src="assets/img/a31d745b144e44f8c25e3e13dc81ac34.jpg" alt="Emirates Draws — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:800/453">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/6b54eb95178a234aeab7dcac50d9cf94.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/6b54eb95178a234aeab7dcac50d9cf94.jpg" data-cursor="View">
             <img src="assets/img/6b54eb95178a234aeab7dcac50d9cf94.jpg" alt="Emirates Draws — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:800/450">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/7d085eb98987a83c719bcca955f879a5.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/7d085eb98987a83c719bcca955f879a5.jpg" data-cursor="View">
             <img src="assets/img/7d085eb98987a83c719bcca955f879a5.jpg" alt="Emirates Draws — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/a9b82752f01bedd360f304288127202f.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/a9b82752f01bedd360f304288127202f.jpg" data-cursor="View">
             <img src="assets/img/a9b82752f01bedd360f304288127202f.jpg" alt="Emirates Draws — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:800/800">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/eaed3bd7e9df90692d87c0078ad776f9.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/eaed3bd7e9df90692d87c0078ad776f9.jpg" data-cursor="View">
             <img src="assets/img/eaed3bd7e9df90692d87c0078ad776f9.jpg" alt="Emirates Draws — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/25f3f2a50d958562124009b0f86742c4.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/25f3f2a50d958562124009b0f86742c4.jpg" data-cursor="View">
             <img src="assets/img/25f3f2a50d958562124009b0f86742c4.jpg" alt="Emirates Draws — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:800/800">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/5cebe57e20c0425d762c27772070b278.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/5cebe57e20c0425d762c27772070b278.jpg" data-cursor="View">
             <img src="assets/img/5cebe57e20c0425d762c27772070b278.jpg" alt="Emirates Draws — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
@@ -699,7 +712,7 @@
       <div class="block">
         <h4 class="block__label"><span>Corporate Video</span><span class="block__count">01</span></h4>
         <div class="grid">
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/fc555657031e6a9fbfb700cca513748b.jpg" style="aspect-ratio:1280/720">
             <source src="assets/video/fc555657031e6a9fbfb700cca513748b.mp4" type="video/mp4">
           </video>
@@ -709,17 +722,17 @@
       <div class="block">
         <h4 class="block__label"><span>In-store Videos</span><span class="block__count">03</span></h4>
         <div class="grid">
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/ec3ba624727c2e04169c5c208c0a07fb.jpg" style="aspect-ratio:1280/720">
             <source src="assets/video/ec3ba624727c2e04169c5c208c0a07fb.mp4" type="video/mp4">
           </video>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/c35942ddaecc7d5a9492af455f0be1cf.jpg" style="aspect-ratio:1280/640">
             <source src="assets/video/c35942ddaecc7d5a9492af455f0be1cf.mp4" type="video/mp4">
           </video>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/49e4fa27998a94724ee08cf064cb9109.jpg" style="aspect-ratio:1280/196">
             <source src="assets/video/49e4fa27998a94724ee08cf064cb9109.mp4" type="video/mp4">
           </video>
@@ -743,27 +756,27 @@
         <h4 class="block__label"><span>Social Media Posts</span><span class="block__count">05</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/35c8fb76182d070fcde92300bb2ba6ab.png">
+          <button class="tile__btn" type="button" data-full="assets/img/35c8fb76182d070fcde92300bb2ba6ab.png" data-cursor="View">
             <img src="assets/img/35c8fb76182d070fcde92300bb2ba6ab.png" alt="Burjeel — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/81ee0408afbc84e7c9a7b4312445655e.png">
+          <button class="tile__btn" type="button" data-full="assets/img/81ee0408afbc84e7c9a7b4312445655e.png" data-cursor="View">
             <img src="assets/img/81ee0408afbc84e7c9a7b4312445655e.png" alt="Burjeel — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/df6cb9f442342ee3cf4dd77078babcbc.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/df6cb9f442342ee3cf4dd77078babcbc.jpg" data-cursor="View">
             <img src="assets/img/df6cb9f442342ee3cf4dd77078babcbc.jpg" alt="Burjeel — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:800/800">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/446dbed1c6ac933b02220cc6d431a562.png">
+          <button class="tile__btn" type="button" data-full="assets/img/446dbed1c6ac933b02220cc6d431a562.png" data-cursor="View">
             <img src="assets/img/446dbed1c6ac933b02220cc6d431a562.png" alt="Burjeel — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:1617/936">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/3f549ef3dff7e6018a732ee707766157.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/3f549ef3dff7e6018a732ee707766157.jpg" data-cursor="View">
             <img src="assets/img/3f549ef3dff7e6018a732ee707766157.jpg" alt="Burjeel — Social Media Posts" loading="lazy" decoding="async" style="aspect-ratio:800/347">
           </button>
         </figure>
@@ -785,12 +798,12 @@
       <div class="block">
         <h4 class="block__label"><span>Promo Films</span><span class="block__count">02</span></h4>
         <div class="grid">
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/1901f487ec25c66565706fb6433761d6.jpg" style="aspect-ratio:1080/1080">
             <source src="assets/video/1901f487ec25c66565706fb6433761d6.mp4" type="video/mp4">
           </video>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/3004f1247b7eba40c3a7166d5ab7703e.jpg" style="aspect-ratio:1080/1080">
             <source src="assets/video/3004f1247b7eba40c3a7166d5ab7703e.mp4" type="video/mp4">
           </video>
@@ -814,7 +827,7 @@
         <h4 class="block__label"><span>In-App Messaging</span><span class="block__count">01</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/914a22e71a37e1312a694e60221c3d29.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/914a22e71a37e1312a694e60221c3d29.jpg" data-cursor="View">
             <img src="assets/img/914a22e71a37e1312a694e60221c3d29.jpg" alt="BOUNZ — In-App Messaging" loading="lazy" decoding="async" style="aspect-ratio:800/405">
           </button>
         </figure>
@@ -824,22 +837,22 @@
         <h4 class="block__label"><span>Topical Emailer</span><span class="block__count">04</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/5f94c3a8e6c81609b298fe7de322836c.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/5f94c3a8e6c81609b298fe7de322836c.jpg" data-cursor="View">
             <img src="assets/img/5f94c3a8e6c81609b298fe7de322836c.jpg" alt="BOUNZ — Topical Emailer" loading="lazy" decoding="async" style="aspect-ratio:640/800">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/0ddba9487a5d58e8225cbabed1cae70a.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/0ddba9487a5d58e8225cbabed1cae70a.jpg" data-cursor="View">
             <img src="assets/img/0ddba9487a5d58e8225cbabed1cae70a.jpg" alt="BOUNZ — Topical Emailer" loading="lazy" decoding="async" style="aspect-ratio:640/800">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/ef879d7178722cbc66557f13c52edca3.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/ef879d7178722cbc66557f13c52edca3.jpg" data-cursor="View">
             <img src="assets/img/ef879d7178722cbc66557f13c52edca3.jpg" alt="BOUNZ — Topical Emailer" loading="lazy" decoding="async" style="aspect-ratio:640/800">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/99407b7142b3cdb97980555fd2fecadc.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/99407b7142b3cdb97980555fd2fecadc.jpg" data-cursor="View">
             <img src="assets/img/99407b7142b3cdb97980555fd2fecadc.jpg" alt="BOUNZ — Topical Emailer" loading="lazy" decoding="async" style="aspect-ratio:640/800">
           </button>
         </figure>
@@ -861,17 +874,17 @@
       <div class="block">
         <h4 class="block__label"><span>Social Media Creatives</span><span class="block__count">03</span></h4>
         <div class="grid">
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/de3dc3401a1fb54fc7201dd71b1c4376.jpg" style="aspect-ratio:720/1280">
             <source src="assets/video/de3dc3401a1fb54fc7201dd71b1c4376.mp4" type="video/mp4">
           </video>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/9d9050727738c0a67f61a4087481b3d0.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/9d9050727738c0a67f61a4087481b3d0.jpg" data-cursor="View">
             <img src="assets/img/9d9050727738c0a67f61a4087481b3d0.jpg" alt="Hersay — Social Media Creatives" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/e1763685fab27f52bd749cd759ad5fe9.jpg" style="aspect-ratio:1080/1080">
             <source src="assets/video/e1763685fab27f52bd749cd759ad5fe9.mp4" type="video/mp4">
           </video>
@@ -882,32 +895,32 @@
         <h4 class="block__label"><span>Product Launch — Grid Post</span><span class="block__count">06</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/d68ceabffc3247b044c5c5f78496a2b2.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/d68ceabffc3247b044c5c5f78496a2b2.jpg" data-cursor="View">
             <img src="assets/img/d68ceabffc3247b044c5c5f78496a2b2.jpg" alt="Hersay — Product Launch — Grid Post" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/4d65f685ceed77c5bd832516131bfa6e.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/4d65f685ceed77c5bd832516131bfa6e.jpg" data-cursor="View">
             <img src="assets/img/4d65f685ceed77c5bd832516131bfa6e.jpg" alt="Hersay — Product Launch — Grid Post" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/47b89e05fa07b07be0b6e604ca22118c.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/47b89e05fa07b07be0b6e604ca22118c.jpg" data-cursor="View">
             <img src="assets/img/47b89e05fa07b07be0b6e604ca22118c.jpg" alt="Hersay — Product Launch — Grid Post" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/3012cb40446634335921c633a99d79bb.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/3012cb40446634335921c633a99d79bb.jpg" data-cursor="View">
             <img src="assets/img/3012cb40446634335921c633a99d79bb.jpg" alt="Hersay — Product Launch — Grid Post" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/7bac77f69361819305e24922188f1299.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/7bac77f69361819305e24922188f1299.jpg" data-cursor="View">
             <img src="assets/img/7bac77f69361819305e24922188f1299.jpg" alt="Hersay — Product Launch — Grid Post" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/994161eaa5d27f10e73ebf2e3007b9cf.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/994161eaa5d27f10e73ebf2e3007b9cf.jpg" data-cursor="View">
             <img src="assets/img/994161eaa5d27f10e73ebf2e3007b9cf.jpg" alt="Hersay — Product Launch — Grid Post" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
@@ -916,7 +929,7 @@
       <div class="block">
         <h4 class="block__label"><span>Campaign — Women&#x27;s Day</span><span class="block__count">01</span></h4>
         <div class="grid">
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/1cb2391866a95c13f5180578dc3ca717.jpg" style="aspect-ratio:1280/720">
             <source src="assets/video/1cb2391866a95c13f5180578dc3ca717.mp4" type="video/mp4">
           </video>
@@ -940,32 +953,32 @@
         <h4 class="block__label"><span>Campaign — Friendship Day</span><span class="block__count">06</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/f75ed86c090199f6303b073a1a91b206.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/f75ed86c090199f6303b073a1a91b206.jpg" data-cursor="View">
             <img src="assets/img/f75ed86c090199f6303b073a1a91b206.jpg" alt="Being Human — Campaign — Friendship Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/e4ca4d16d1b5aedbe6c3476ca4f15f03.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/e4ca4d16d1b5aedbe6c3476ca4f15f03.jpg" data-cursor="View">
             <img src="assets/img/e4ca4d16d1b5aedbe6c3476ca4f15f03.jpg" alt="Being Human — Campaign — Friendship Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/20683a9a2d96a1920241a21e7f762a25.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/20683a9a2d96a1920241a21e7f762a25.jpg" data-cursor="View">
             <img src="assets/img/20683a9a2d96a1920241a21e7f762a25.jpg" alt="Being Human — Campaign — Friendship Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
-        <figure class="tile tile--video reveal">
+        <figure class="tile tile--video reveal" data-cursor="Play">
           <video controls preload="none" playsinline poster="assets/video/b8dddb23ed57ab34047d2f887d4a46c8.jpg" style="aspect-ratio:720/1280">
             <source src="assets/video/b8dddb23ed57ab34047d2f887d4a46c8.mp4" type="video/mp4">
           </video>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/67b35cff7b781f0c3371ac0a386ebaec.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/67b35cff7b781f0c3371ac0a386ebaec.jpg" data-cursor="View">
             <img src="assets/img/67b35cff7b781f0c3371ac0a386ebaec.jpg" alt="Being Human — Campaign — Friendship Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/a6dcbd8650dfbf9892b1cb214688bbbe.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/a6dcbd8650dfbf9892b1cb214688bbbe.jpg" data-cursor="View">
             <img src="assets/img/a6dcbd8650dfbf9892b1cb214688bbbe.jpg" alt="Being Human — Campaign — Friendship Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
@@ -975,47 +988,47 @@
         <h4 class="block__label"><span>Campaign — Father&#x27;s Day</span><span class="block__count">09</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/4933c4bacf9dc95de0b2c4318a46a9ee.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/4933c4bacf9dc95de0b2c4318a46a9ee.jpg" data-cursor="View">
             <img src="assets/img/4933c4bacf9dc95de0b2c4318a46a9ee.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/fbc1ff71a98effa86c60bcd32169e396.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/fbc1ff71a98effa86c60bcd32169e396.jpg" data-cursor="View">
             <img src="assets/img/fbc1ff71a98effa86c60bcd32169e396.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/038f5d285c4c49ab6ce7e64156bc658a.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/038f5d285c4c49ab6ce7e64156bc658a.jpg" data-cursor="View">
             <img src="assets/img/038f5d285c4c49ab6ce7e64156bc658a.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/8a09674b3121702c2322553fce77f6cc.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/8a09674b3121702c2322553fce77f6cc.jpg" data-cursor="View">
             <img src="assets/img/8a09674b3121702c2322553fce77f6cc.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/0b198c2e8f1b7531138cd83d5681548c.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/0b198c2e8f1b7531138cd83d5681548c.jpg" data-cursor="View">
             <img src="assets/img/0b198c2e8f1b7531138cd83d5681548c.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/77e4a03cce48bb654fb32472bc5e58f1.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/77e4a03cce48bb654fb32472bc5e58f1.jpg" data-cursor="View">
             <img src="assets/img/77e4a03cce48bb654fb32472bc5e58f1.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/395a9216261ba4462e290f27c7dc8a1e.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/395a9216261ba4462e290f27c7dc8a1e.jpg" data-cursor="View">
             <img src="assets/img/395a9216261ba4462e290f27c7dc8a1e.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/296b9b8f663db6959fc25ac30161d93a.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/296b9b8f663db6959fc25ac30161d93a.jpg" data-cursor="View">
             <img src="assets/img/296b9b8f663db6959fc25ac30161d93a.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/257be69211a37491c9d8aae4123dc99e.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/257be69211a37491c9d8aae4123dc99e.jpg" data-cursor="View">
             <img src="assets/img/257be69211a37491c9d8aae4123dc99e.jpg" alt="Being Human — Campaign — Father&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
@@ -1038,12 +1051,12 @@
         <h4 class="block__label"><span>Campaign — Children&#x27;s Day</span><span class="block__count">02</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/f2da95fe2723f671ac5824898696b46a.png">
+          <button class="tile__btn" type="button" data-full="assets/img/f2da95fe2723f671ac5824898696b46a.png" data-cursor="View">
             <img src="assets/img/f2da95fe2723f671ac5824898696b46a.png" alt="Digital Showroom — Campaign — Children&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/80bfb9f13587727c412f3f1baaf53b44.png">
+          <button class="tile__btn" type="button" data-full="assets/img/80bfb9f13587727c412f3f1baaf53b44.png" data-cursor="View">
             <img src="assets/img/80bfb9f13587727c412f3f1baaf53b44.png" alt="Digital Showroom — Campaign — Children&#x27;s Day" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
@@ -1053,7 +1066,7 @@
         <h4 class="block__label"><span>Campaign — Diwali</span><span class="block__count">01</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/13299d0f847a38f7e43b093eace609d7.png">
+          <button class="tile__btn" type="button" data-full="assets/img/13299d0f847a38f7e43b093eace609d7.png" data-cursor="View">
             <img src="assets/img/13299d0f847a38f7e43b093eace609d7.png" alt="Digital Showroom — Campaign — Diwali" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
           <figcaption>Spark In The Dark
@@ -1065,17 +1078,17 @@ A small diya seller was thrased by a big candle and diya store owner and he had 
         <h4 class="block__label"><span>Topicals</span><span class="block__count">03</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/deacdf85edd6e4b285b8a4f7a2bb45e0.png">
+          <button class="tile__btn" type="button" data-full="assets/img/deacdf85edd6e4b285b8a4f7a2bb45e0.png" data-cursor="View">
             <img src="assets/img/deacdf85edd6e4b285b8a4f7a2bb45e0.png" alt="Digital Showroom — Topicals" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/6d96e72980af00dc0778a5830c127f38.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/6d96e72980af00dc0778a5830c127f38.jpg" data-cursor="View">
             <img src="assets/img/6d96e72980af00dc0778a5830c127f38.jpg" alt="Digital Showroom — Topicals" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/d5ea71bdb8f05a574a6a80f8f198ea88.jpg">
+          <button class="tile__btn" type="button" data-full="assets/img/d5ea71bdb8f05a574a6a80f8f198ea88.jpg" data-cursor="View">
             <img src="assets/img/d5ea71bdb8f05a574a6a80f8f198ea88.jpg" alt="Digital Showroom — Topicals" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
@@ -1098,42 +1111,42 @@ A small diya seller was thrased by a big candle and diya store owner and he had 
         <h4 class="block__label"><span>Selected Pieces</span><span class="block__count">08</span></h4>
         <div class="grid">
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/098032004c09a7e293b6868cc828d12f.png">
+          <button class="tile__btn" type="button" data-full="assets/img/098032004c09a7e293b6868cc828d12f.png" data-cursor="View">
             <img src="assets/img/098032004c09a7e293b6868cc828d12f.png" alt="Personal Projects — Selected Pieces" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/498af3ad5d0657b8b103bdea78d48e9f.png">
+          <button class="tile__btn" type="button" data-full="assets/img/498af3ad5d0657b8b103bdea78d48e9f.png" data-cursor="View">
             <img src="assets/img/498af3ad5d0657b8b103bdea78d48e9f.png" alt="Personal Projects — Selected Pieces" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/3508731ab574f3434b73b368cfb5124e.png">
+          <button class="tile__btn" type="button" data-full="assets/img/3508731ab574f3434b73b368cfb5124e.png" data-cursor="View">
             <img src="assets/img/3508731ab574f3434b73b368cfb5124e.png" alt="Personal Projects — Selected Pieces" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/72e2a6a29a7fc9518f0231936232ab9e.png">
+          <button class="tile__btn" type="button" data-full="assets/img/72e2a6a29a7fc9518f0231936232ab9e.png" data-cursor="View">
             <img src="assets/img/72e2a6a29a7fc9518f0231936232ab9e.png" alt="Personal Projects — Selected Pieces" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/78e9546d0cb44e13400f79135367e101.png">
+          <button class="tile__btn" type="button" data-full="assets/img/78e9546d0cb44e13400f79135367e101.png" data-cursor="View">
             <img src="assets/img/78e9546d0cb44e13400f79135367e101.png" alt="Personal Projects — Selected Pieces" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/928d3162da2bfe6caae573f04ffd64d1.png">
+          <button class="tile__btn" type="button" data-full="assets/img/928d3162da2bfe6caae573f04ffd64d1.png" data-cursor="View">
             <img src="assets/img/928d3162da2bfe6caae573f04ffd64d1.png" alt="Personal Projects — Selected Pieces" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/28787ae534fb16ae2a7cf6973811a627.png">
+          <button class="tile__btn" type="button" data-full="assets/img/28787ae534fb16ae2a7cf6973811a627.png" data-cursor="View">
             <img src="assets/img/28787ae534fb16ae2a7cf6973811a627.png" alt="Personal Projects — Selected Pieces" loading="lazy" decoding="async" style="aspect-ratio:1130/1600">
           </button>
         </figure>
         <figure class="tile reveal">
-          <button class="tile__btn" type="button" data-full="assets/img/0eb32a74e26995b5b4ffd76a36f55a08.png">
+          <button class="tile__btn" type="button" data-full="assets/img/0eb32a74e26995b5b4ffd76a36f55a08.png" data-cursor="View">
             <img src="assets/img/0eb32a74e26995b5b4ffd76a36f55a08.png" alt="Personal Projects — Selected Pieces" loading="lazy" decoding="async" style="aspect-ratio:1080/1080">
           </button>
         </figure>
@@ -1179,7 +1192,12 @@ A small diya seller was thrased by a big candle and diya store owner and he had 
 
 <div class="lb" id="lightbox" hidden>
   <button class="lb__x" type="button" aria-label="Close">&times;</button>
-  <img id="lightboxImg" src="" alt="">
+  <button class="lb__nav lb__nav--prev" type="button" aria-label="Previous">&larr;</button>
+  <figure class="lb__stage">
+    <img id="lightboxImg" src="" alt="">
+    <figcaption class="lb__cap"><span class="lb__count"></span><span class="lb__text"></span></figcaption>
+  </figure>
+  <button class="lb__nav lb__nav--next" type="button" aria-label="Next">&rarr;</button>
 </div>
 
 <script src="script.js"></script>

@@ -19,6 +19,24 @@ Type is **Instrument Serif** for display and **Space Grotesk** for everything
 else, both from Google Fonts. All tokens live in the `:root` block at the top of
 `style.css` — change them there and the whole site follows.
 
+## Interactions
+
+All vanilla JS in `script.js`, no libraries:
+
+- **Custom cursor** with contextual labels — "View" over stills, "Play" over film, "Open" over index rows. Desktop pointers only.
+- **Index hover previews** — hovering a client in the index floats a still from that project near the pointer.
+- **Hero** — masked lines wipe up on load; a soft orange spotlight tracks the pointer.
+- **Count-up stats** — the receipts animate from zero when scrolled into view.
+- **Tile reveals** — images wipe open with a clip-path and settle from a slight scale, cascading across each row.
+- **Marquee** — drifts on its own and gets flung along by scroll velocity; pauses off-screen.
+- **Lightbox gallery** — arrows, ←/→ keys, Esc, a counter and the caption; steps through the block you clicked into.
+- **Chrome** — scroll progress bar, topbar that tucks away on scroll-down, film grain, magnetic contact links.
+
+Two safeguards worth knowing about if you edit this: animations that start from a
+hidden state are gated behind an `html.js` class, so the page stays readable if
+the script fails; and a 2.5s failsafe reveals everything regardless. Everything
+is disabled under `prefers-reduced-motion`.
+
 ## Structure
 
 ```
