@@ -9,15 +9,14 @@ directly in `index.html` without installing anything.
 
 ## Design system
 
-Warm paper ground, near-black ink, one accent blue. All tokens sit in the
-`:root` block at the top of `style.css`.
+Ink ground, bone type, one vermillion accent. All tokens sit in the `:root`
+block at the top of `style.css`.
 
-| Token      | Value     | Role                                   |
-|------------|-----------|----------------------------------------|
-| `--paper`  | `#F3F0E7` | page ground                            |
-| `--ink`    | `#14130F` | body text                              |
-| `--blue`   | `#1F3FE0` | the single accent — used sparingly     |
-| `--night`  | `#101010` | one inverted section (the Amazon case) |
+| Token     | Value     | Role                        |
+|-----------|-----------|-----------------------------|
+| `--ink`   | `#0B0B0C` | page ground                 |
+| `--bone`  | `#EFECE3` | body text                   |
+| `--acc`   | `#FF4A1C` | the single accent, sparingly|
 
 Type: **Bricolage Grotesque** for display, **Instrument Sans** for reading,
 **JetBrains Mono** for metadata and labels. Three families, one job each.
@@ -34,9 +33,13 @@ assets/img/     stills, campaign creative, portrait
 assets/video/   films (.mp4) + matching poster frames (.jpg)
 ```
 
-Page order: hero → ticker → what the job is → four case studies (Amazon,
-Bewakoof, Deltic, Emirates Draws) → archive → experience → approach → about →
-contact.
+Page order: hero → brand ticker → about → proof strip → work index → five case
+studies (Bewakoof, Deltic, Emirates Draws, Being Human, Hersay) → personal work
+→ more work → contact.
+
+Social work uses `.feed` — a three-across square grid with hairline gutters, so
+it reads the way it ran. Film and mixed-aspect sets use `.band`, a full-bleed
+horizontal strip you can drag.
 
 ## Editing
 
