@@ -200,8 +200,20 @@
           <span class="idx__c">Audio promos</span>
           <span class="idx__a" aria-hidden="true">&rarr;</span>
         </a>
-        <a class="idx" href="#personal" data-thumb="assets/img/098032004c09a7e293b6868cc828d12f.png" data-cursor="Open">
+        <a class="idx" href="#meera" data-cursor="Open">
           <span class="idx__n">11</span>
+          <span class="idx__b">Meera</span>
+          <span class="idx__c">Voice AI &middot; Persona spec</span>
+          <span class="idx__a" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="idx" href="#promptarch" data-cursor="Open">
+          <span class="idx__n">12</span>
+          <span class="idx__b">Prompt architecture</span>
+          <span class="idx__c">LLM &middot; Evaluation</span>
+          <span class="idx__a" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="idx" href="#personal" data-thumb="assets/img/098032004c09a7e293b6868cc828d12f.png" data-cursor="Open">
+          <span class="idx__n">13</span>
           <span class="idx__b">Personal</span>
           <span class="idx__c">Written for myself</span>
           <span class="idx__a" aria-hidden="true">&rarr;</span>
@@ -998,6 +1010,98 @@ A small diya seller was thrased by a big candle and diya store owner and he had 
     </div>
   </section>
   <div class="cases cases--pers">
+  <article class="cs" id="meera">
+    <div class="wrap cs__grid">
+      <div class="cs__meta">
+        <span class="cs__n">11</span>
+        <h3 class="cs__b">Meera</h3>
+        <p class="cs__c">Persona &amp; behaviour spec &mdash; self-initiated</p>
+        <ul class="cs__tags"><li>Voice AI</li><li>Persona</li><li>Evaluation</li></ul>
+      </div>
+      <div class="cs__body">
+        <p class="cs__hook reveal">Anyone can write the <em>happy path.</em><br>A persona is what happens when it breaks.</p>
+        <div class="cs__two">
+          <p class="reveal"><strong>The ask.</strong> A bill-payment voice assistant needs a personality one document can hold &mdash; something an engineer, a QA lead and a copywriter all work from without three different readings.</p>
+          <p class="reveal"><strong>The approach.</strong> Users call because money is involved and something is already wrong. That sets the character before any adjective does: the friend at the electricity board who picks up on the second ring. Competent and brief beats warm and chatty.</p>
+        </div>
+
+        <div class="blk">
+          <h4 class="blk__l"><span>Process</span><span class="blk__c">03</span></h4>
+          <div class="spec reveal">
+            <div class="spec__r"><div class="spec__k">01 &nbsp; Set the dials</div><p class="spec__v">Register, pace, humour, apology budget &mdash; written as settings, not adjectives. <strong>One "sorry" per call</strong>, spent on the worst thing that happens.</p></div>
+            <div class="spec__r"><div class="spec__k">02 &nbsp; Pair every rule</div><p class="spec__v">Each rule ships beside the near-miss it's meant to prevent, so QA has a reference answer to score against.</p></div>
+            <div class="spec__r"><div class="spec__k">03 &nbsp; Break it on purpose</div><p class="spec__v">Forty adversarial calls &mdash; mid-sentence corrections, two intents in one breath, code-switching mid-number &mdash; then score every rule per turn.</p></div>
+          </div>
+        </div>
+
+        <div class="blk">
+          <h4 class="blk__l"><span>The rules, each with its failing twin</span><span class="blk__c">04</span></h4>
+          <div class="pair reveal">
+            <p class="yes said">Your September bill is &#8377;1,840, due the 28th.</p>
+            <p class="no said">Sure! Let me pull that up for you. One moment&hellip;</p>
+            <p class="yes said">Paying &#8377;1,840 from the account ending 4471. Shall I?</p>
+            <p class="no said">Processing your payment now!</p>
+            <p class="yes said">I can't dispute a paid bill. I can raise a refund request instead.</p>
+            <p class="no said">Unfortunately I'm unable to assist with that request.</p>
+            <p class="yes said">Got it.</p>
+            <p class="no said">Absolutely! Great question!</p>
+          </div>
+        </div>
+
+        <div class="blk">
+          <h4 class="blk__l"><span>When it goes wrong</span><span class="blk__c">04</span></h4>
+          <div class="spec reveal">
+            <div class="spec__r"><div class="spec__k">Misheard a number</div><p class="spec__v">Never guess. Offer the two likely parses &mdash; <strong>"Eighteen forty, or eighty fourteen?"</strong> Asking for a repeat is what makes people hang up.</p></div>
+            <div class="spec__r"><div class="spec__k">Failed twice</div><p class="spec__v">Stop re-prompting. Switch channel, send a link, keep the payment.</p></div>
+            <div class="spec__r"><div class="spec__k">Did the wrong thing</div><p class="spec__v">Say it first, without cushioning: <strong>what happened &rarr; what I've already done &rarr; what you can do now.</strong></p></div>
+            <div class="spec__r"><div class="spec__k">User is angry</div><p class="spec__v">Shorten everything, offer a human. Anger is a routing signal, not a tone to mirror.</p></div>
+          </div>
+          <p class="cs__note reveal">A constraint set in turn one gets checked again at turn five &mdash; carry-over is the first thing a tightened format instruction breaks.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="cs" id="promptarch">
+    <div class="wrap cs__grid">
+      <div class="cs__meta">
+        <span class="cs__n">12</span>
+        <h3 class="cs__b">Prompt architecture</h3>
+        <p class="cs__c">Method &mdash; how I build one, how I prove it</p>
+        <ul class="cs__tags"><li>LLM</li><li>Rubrics</li><li>Failure analysis</li></ul>
+      </div>
+      <div class="cs__body">
+        <p class="cs__hook reveal">Most prompts are one paragraph<br>that grew by <em>accretion.</em></p>
+        <div class="cs__two">
+          <p class="reveal"><strong>The problem.</strong> Every incident adds a sentence, nobody removes one, and eventually the instructions contradict each other and the model picks a side at random.</p>
+          <p class="reveal"><strong>The fix.</strong> Treat the prompt as a reviewable artifact: ranked rules instead of a flat list, a failure taxonomy so bugs get filed against the right layer, and a regression set that makes "this change is safe" a claim with evidence behind it.</p>
+        </div>
+
+        <div class="blk">
+          <h4 class="blk__l"><span>Process</span><span class="blk__c">03</span></h4>
+          <div class="spec reveal">
+            <div class="spec__r"><div class="spec__k">01 &nbsp; Structure</div><p class="spec__v">Role and scope, then <strong>ranked</strong> behaviour rules, then the output contract, then examples chosen for the edges. "Be concise" and "confirm the amount" <em>will</em> collide; if I can't say which wins, the spec isn't finished.</p></div>
+            <div class="spec__r"><div class="spec__k">02 &nbsp; Diagnose</div><p class="spec__v">Attribute every bad output to a layer before touching anything &mdash; instruction, carry-over, grounding, retrieval, tool choice, parameters, sequencing, tone.</p></div>
+            <div class="spec__r"><div class="spec__k">03 &nbsp; Score</div><p class="spec__v">A rubric per dimension, scored per turn with a written justification. Where the model failed, I write the corrected answer &mdash; that becomes the regression set.</p></div>
+          </div>
+          <p class="cs__note reveal">The taxonomy earns its keep by stopping a team from patching the system prompt for a retrieval bug &mdash; which is how prompts become the accretion paragraph in the first place.</p>
+        </div>
+
+        <div class="blk">
+          <h4 class="blk__l"><span>Worked rewrite</span><span class="blk__c">02</span></h4>
+          <div class="pair reveal">
+            <p class="no said">Answer the user's billing question concisely and politely, always being accurate about amounts and dates, and don't make things up.</p>
+            <p class="yes said">Answer in at most two sentences. Every amount is stated with its currency and every date with its month. If you cannot state both from the retrieved bill, say which one is missing and stop &mdash; do not estimate.</p>
+          </div>
+          <div class="cs__two">
+            <p class="reveal">The first fails quietly. "Concisely" and "accurate about amounts and dates" compete; under pressure the model drops the date. "Don't make things up" has no observable behaviour attached &mdash; there is nothing to score.</p>
+            <p class="reveal">The second is three separable rules, each with a failure mode you can write a test for, and a ranking that settles the collision: completeness of the figure beats brevity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
   <article class="cs" id="personal">
     <div class="wrap cs__grid">
       <div class="cs__meta">

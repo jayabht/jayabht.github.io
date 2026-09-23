@@ -444,3 +444,30 @@ html.js body.go .hero__base { opacity: 1; }
   html.js .hero__base { opacity: 1; }
   .menu a { transform: none; }
 }
+
+/* ── spec blocks: text-only case studies (persona spec, prompt architecture) ── */
+.spec { margin: 0 0 clamp(1.5rem, 3vw, 2.25rem); display: grid; gap: .9rem; }
+.spec__r {
+  display: grid; gap: .35rem .9rem; padding: .95rem 0;
+  border-top: 1px solid var(--line-2);
+}
+.spec__r:first-child { border-top: 0; }
+@media (min-width: 780px) { .spec__r { grid-template-columns: 13rem 1fr; } }
+.spec__k {
+  font-size: .68rem; text-transform: uppercase; letter-spacing: .16em;
+  color: var(--bone-dim); padding-top: .18em;
+}
+.spec__v { margin: 0; color: var(--bone-dim); max-width: 60ch; }
+.spec__v strong { color: var(--bone); font-weight: 500; }
+
+.pair { display: grid; gap: .6rem; margin: 0 0 1.1rem; }
+@media (min-width: 780px) { .pair { grid-template-columns: 1fr 1fr; gap: .6rem 1.4rem; } }
+.pair p { margin: 0; padding-left: 1.5rem; position: relative; color: var(--bone-dim); }
+.pair p::before {
+  position: absolute; left: 0; top: 0; font-size: .7rem; letter-spacing: .1em;
+}
+.pair .yes::before { content: "YES"; color: var(--signal); }
+.pair .no::before  { content: "NO"; color: var(--bone-fnt); }
+.pair .no { color: var(--bone-fnt); }
+
+.said { font-family: var(--serif); font-size: clamp(1.05rem, 1.7vw, 1.35rem); line-height: 1.34; }
